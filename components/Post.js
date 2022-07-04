@@ -10,7 +10,7 @@ function Post({ name, message, email, postImage, image, timestamp }) {
         <div className="flex flex-col">
             <div className="p-5 bg-white mt-5 rounded-t-2xl shadow-sm">
                 <div className="flex items-center space-x-2">
-                    <Image className="rounded-full" 
+                    <img className="rounded-full" 
                     src={session?.user?.image} 
                     width={40}
                     height={40}
@@ -31,7 +31,7 @@ function Post({ name, message, email, postImage, image, timestamp }) {
             </div>
             {postImage && (
                 <div className="relative h-56 md:h-96 bg-white">
-                    <Image src={postImage} objectFit="cover" layout="fill" alt=""/>
+                    <Image src={postImage} objectFit="cover" layout="fill" />
                 </div>
             )}
 
