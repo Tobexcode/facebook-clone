@@ -48,8 +48,9 @@ function Header() {
       {/* session.map(userInfo)(
 
       ) */}
-      <div className='flex  cursor-pointer items-center py-2  px-1 rounded-full hover:bg-gray-100 transition-all duration-200 group'>
-      {session && (
+      <div className='flex cursor-pointer items-center py-2  px-1 rounded-full hover:bg-gray-100 transition-all duration-200 group'>
+        <div className='flex '>
+         {session && (
        <Image
       onClick={session ? signOut : signIn}
       className="rounded-full cursor-pointer group"
@@ -58,7 +59,9 @@ function Header() {
       height="30"
       layout="fixed"
     /> 
-      )}
+      )} 
+        </div>
+      
       <HeaderRow Icon={UserIcon} onClick={session ? signOut : signIn} title={session ? session?.user?.name : 'Sign In'}/>
       </div>
       
