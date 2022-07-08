@@ -19,7 +19,7 @@ function Posts({ posts }) {
                 message={post.data().message}
                 email={post.data().email}
                 timestamp={post.data().timestamp}
-                Image={post.data().image}
+                image={post.data().image}
                 postImage={post.data().postImage}
             />
             )) 
@@ -31,7 +31,7 @@ function Posts({ posts }) {
                 message={post.message}
                 email={post.email}
                 timestamp={post.timestamp}
-                Image={post.image}
+                image={post.image}
                 postImage={post.postImage}
             />
                 ))
